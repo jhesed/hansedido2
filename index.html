@@ -1,696 +1,1111 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+   <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]>
+   <html class="no-js lt-ie9 lt-ie8" lang="en">
+      <![endif]-->
+<!--[if (IE 8)&!(IEMobile)]>
+      <html class="no-js lt-ie9" lang="en">
+         <![endif]-->
+<!--[if (IE 9)]>
+         <html class="no-js ie9" lang="en">
+            <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en-US">
+<!--<![endif]-->
 <head>
-
 <!-- Meta Tags -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-<title>Han Sed I Do</title>   
-
-<meta name="description" content="Insert Your Site Description" /> 
-
+<meta
+  http-equiv="Content-Type"
+  content="text/html; charset=UTF-8"
+/>
+<title>Han Sed I Do</title>
+<meta
+  name="description"
+  content="Insert Your Site Description"
+/>
 <!-- Mobile Specifics -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="HandheldFriendly" content="true"/>
-<meta name="MobileOptimized" content="320"/>   
-
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+<meta
+  name="HandheldFriendly"
+  content="true"
+/>
+<meta
+  name="MobileOptimized"
+  content="320"
+/>
 <!-- Mobile Internet Explorer ClearType Technology -->
-<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
-
+<!--[if IEMobile]>  
+                  <meta http-equiv="cleartype" content="on">
+                  <![endif]-->
 <!-- Bootstrap -->
-<link href="_include/css/bootstrap.min.css" rel="stylesheet">
-
+<link
+  href="_include/css/bootstrap.min.css"
+  rel="stylesheet"
+>
 <!-- Main Style -->
-<link href="_include/css/main.css" rel="stylesheet">
-
+<link
+  href="_include/css/main.css"
+  rel="stylesheet"
+>
 <!-- Supersized -->
-<link href="_include/css/supersized.css" rel="stylesheet">
-<link href="_include/css/supersized.shutter.css" rel="stylesheet">
-
+<link
+  href="_include/css/supersized.css"
+  rel="stylesheet"
+>
+<link
+  href="_include/css/supersized.shutter.css"
+  rel="stylesheet"
+>
 <!-- FancyBox -->
-<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
-
+<link
+  href="_include/css/fancybox/jquery.fancybox.css"
+  rel="stylesheet"
+>
 <!-- Font Icons -->
-<link href="_include/css/fonts.css" rel="stylesheet">
-
+<link
+  href="_include/css/fonts.css"
+  rel="stylesheet"
+>
 <!-- Shortcodes -->
-<link href="_include/css/shortcodes.css" rel="stylesheet">
-
+<link
+  href="_include/css/shortcodes.css"
+  rel="stylesheet"
+>
 <!-- Responsive -->
-<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="_include/css/responsive.css" rel="stylesheet">
-
+<link
+  href="_include/css/bootstrap-responsive.min.css"
+  rel="stylesheet"
+>
+<link
+  href="_include/css/responsive.css"
+  rel="stylesheet"
+>
 <!-- Supersized -->
-<link href="_include/css/supersized.css" rel="stylesheet">
-<link href="_include/css/supersized.shutter.css" rel="stylesheet">
-
+<link
+  href="_include/css/supersized.css"
+  rel="stylesheet"
+>
+<link
+  href="_include/css/supersized.shutter.css"
+  rel="stylesheet"
+>
 <!-- Countdown -->
-<link href="_include/css/countdown.css" rel="stylesheet">
-
+<link
+  href="_include/css/countdown.css"
+  rel="stylesheet"
+>
+<!-- RSVP -->
+<link
+  href="_include/css/contact-form-utils.css"
+  rel="stylesheet"
+>
+<link
+  href="_include/css/contact-form.css"
+  rel="stylesheet"
+>
 <!-- Han Sed I Do -->
-<link href="_include/css/hansedido.css" rel="stylesheet">
-
+<link
+  href="_include/css/hansedido.css"
+  rel="stylesheet"
+>
 <!-- Google Font -->
-<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
-
+<link
+  href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900'
+  rel='stylesheet'
+  type='text/css'
+>
 <!-- Fav Icon -->
-<link rel="shortcut icon" href="#">
-
-<link rel="apple-touch-icon" href="#">
-<link rel="apple-touch-icon" sizes="114x114" href="#">
-<link rel="apple-touch-icon" sizes="72x72" href="#">
-<link rel="apple-touch-icon" sizes="144x144" href="#">
-
+<link
+  rel="shortcut icon"
+  href="#"
+>
+<link
+  rel="apple-touch-icon"
+  href="#"
+>
+<link
+  rel="apple-touch-icon"
+  sizes="114x114"
+  href="#"
+>
+<link
+  rel="apple-touch-icon"
+  sizes="72x72"
+  href="#"
+>
+<link
+  rel="apple-touch-icon"
+  sizes="144x144"
+  href="#"
+>
 <!-- Modernizr -->
 <script src="_include/js/modernizr.js"></script>
-
 <!-- Analytics -->
 <script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push([ '_setAccount', 'Insert Your Code' ]);
+	_gaq.push([ '_trackPageview' ]);
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'Insert Your Code']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www')
+				+ '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
 </script>
 <!-- End Analytics -->
-
 </head>
-
-
 <body>
-
-<!-- This section is for Splash Screen -->
-<div class="ole">
-<section id="jSplash">
-	<div id="circle"></div>
-</section>
-</div>
-<!-- End of Splash Screen -->
-
-<!-- Homepage Slider -->
-<div id="home-slider">	
+  <!-- This section is for Splash Screen -->
+  <div class="ole">
+    <section id="jSplash">
+      <div id="circle"></div>
+    </section>
+  </div>
+  <!-- End of Splash Screen -->
+  <!-- Homepage Slider -->
+  <div id="home-slider">
     <div class="overlay"></div>
-
     <div class="slider-text">
-    	<div id="slidecaption"></div>
-    </div>   
-	
-	<div class="control-nav">
-        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
-        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
-        <ul id="slide-list"></ul>
-        
-        <a id="nextsection" href="#countdown"><i class="font-icon-arrow-simple-down"></i></a>
+      <div id="slidecaption"></div>
     </div>
-</div>
-<!-- End Homepage Slider -->
-
-<!-- Header -->
-<header>
+    <div class="control-nav">
+      <a
+        id="prevslide"
+        class="load-item"
+      ><i class="font-icon-arrow-simple-left"></i></a> <a
+        id="nextslide"
+        class="load-item"
+      ><i class="font-icon-arrow-simple-right"></i></a>
+      <ul id="slide-list"></ul>
+      <a
+        id="nextsection"
+        href="#countdown"
+      ><i class="font-icon-arrow-simple-down"></i></a>
+    </div>
+  </div>
+  <!-- End Homepage Slider -->
+  <!-- Header -->
+  <header>
     <div class="sticky-nav">
-    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-        
-        <div id="logo">
-        	<a id="goUp" href="#home-slider" title="Han Sed I Do | 2020-02-25">Han Sed I Do</a>
-        </div>
-        
-        <nav id="menu">
-        	<ul id="menu-nav">
-            	<li class="current"><a href="#home-slider">Home</a></li>
-                <li><a href="#countdown">Wedding Countdown</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
-				<li><a href="shortcodes.html" class="external">Shortcodes</a></li>
-            </ul>
-        </nav>
-        
+      <a
+        id="mobile-nav"
+        class="menu-nav"
+        href="#menu-nav"
+      ></a>
+      <div id="logo">
+        <a
+          id="goUp"
+          href="#home-slider"
+          title="Han Sed I Do | 2020-02-25"
+        >Han Sed I Do</a>
+      </div>
+      <nav id="menu">
+        <ul id="menu-nav">
+          <li class="current"><a href="#home-slider">Home</a></li>
+          <li><a href="#countdown">Wedding Countdown</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a
+            href="shortcodes.html"
+            class="external"
+          >Shortcodes</a></li>
+        </ul>
+      </nav>
     </div>
-</header>
-<!-- End Header -->
-
-<!-- Countdown -->
-<div id="countdown" class="page">
+  </header>
+  <!-- End Header -->
+  <!-- Countdown -->
+  <div
+    id="countdown"
+    class="page"
+  >
     <div class="container">
-        <div class="main-area-wrapper">
-            <div class="main-area center-text">
-              <div class="display-table wow zoomInUp">
-                <div class="display-table-cell">
-                  <h2 class="title">Road to <span class="highlight">Forever</span></h2>
-                  <p><i>“In the end, it's not the years in your life that count. It's the life in your years.”</i></p>
-                  <p><span class="highlight">– Abraham Lincoln</span></p>
-                  <div id="normal-countdown" data-date="2020/02/25"></div>
-                </div><!-- display-table -->
-              </div><!-- display-table-cell -->
-            </div><!-- main-area -->
-        </div><!-- main-area-wrapper -->        
+      <div class="main-area-wrapper">
+        <div class="main-area center-text">
+          <div class="display-table wow zoomInUp">
+            <div class="display-table-cell">
+              <h2 class="title">
+                Road to <span class="highlight">Forever</span>
+              </h2>
+              <p>
+                <i>“In the end, it's not the years in your life that count. It's the life in
+                  your years.”</i>
+              </p>
+              <p>
+                <span class="highlight">– Abraham Lincoln</span>
+              </p>
+              <div
+                id="normal-countdown"
+                data-date="2020/02/25"
+              ></div>
+            </div>
+            <!-- display-table -->
+          </div>
+          <!-- display-table-cell -->
+        </div>
+        <!-- main-area -->
+      </div>
+      <!-- main-area-wrapper -->
     </div>
-</div>
-<!-- End Countdown -->
-
-
-<!-- FAQ -->
-<div id="faq" name="faq" class="page-alternate">
+  </div>
+  <!-- End Countdown -->
+  <!-- FAQ -->
+  <div
+    id="faq"
+    class="page-alternate"
+  >
     <div class="container">
-        <div class="title-page">
-            <h2 class="title">FA<span class="highlight">Q</span></h2>
-            <h3 class="title-description">Frequently Asked <span class="highlight">Questions</span></h3>
-        </div>
-        <div class="row">
-
-            <!-- 1st Column -->
-            <div class="span6">
-                <div class="accordion-group">
-                    <div class="accordion-heading togglize">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseOne">
-                            What time will the ceremony start?
-                            <span class="font-icon-plus"></span>
-                            <span class="font-icon-minus"></span>
-                        </a>
-                    </div>
-                    <div id="collapseOne" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            Wedding ceremony march will start at exactly 3:00 PM.  Baguhin natin ang Filipino time culture :)
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-group">
-                    <div class="accordion-heading togglize">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseTwo">
-                            What is the dress code?
-                            <span class="font-icon-plus"></span>
-                            <span class="font-icon-minus"></span>
-                        </a>
-                    </div>
-                    <div id="collapseTwo" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            Our color motif is burgundy.  Please wear formal attire. Coat or longsleeves for men and dress for women
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-group">
-                    <div class="accordion-heading togglize">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseThree">
-                            What if I said "yes" to the RVSP pero hindi na ko makakapunta?
-                            <span class="font-icon-plus"></span>
-                            <span class="font-icon-minus"></span>
-                        </a>
-                    </div>
-                    <div id="collapseThree" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            #paasa :D Joke! Please inform us ASAP so we can give your alloted seat to someone else.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-group">
-                    <div class="accordion-heading togglize">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseFour">
-                            Can I bring someone else with me, e.g. kids?
-                            <span class="font-icon-plus"></span>
-                            <span class="font-icon-minus"></span>
-                        </a>
-                    </div>
-                    <div id="collapseFour" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            We request that only those who are invited will come. Please check the invitation for alloted seats. As much as we'd like to invite everyone, we can only invite a number of guests due to limited seats.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-group">
-                    <div class="accordion-heading togglize">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseFive">
-                            Am I allowed to take photos and videos during the wedding ceremony?
-                            <span class="font-icon-plus"></span>
-                            <span class="font-icon-minus"></span>
-                        </a>
-                    </div>
-                    <div id="collapseFive" class="accordion-body collapse">
-                        <div class="accordion-inner">We are respectfully asking you to refrain from using gadgets during the ceremony proper. We have official P/V to capture the moments. Bawi ka na lang sa cocktails and reception. #hansedido :)
-                        </div>
-                    </div>
-                </div>
-
+      <div class="title-page">
+        <h2 class="title">
+          FA<span class="highlight">Q</span>
+        </h2>
+        <h3 class="title-description">
+          Frequently Asked <span class="highlight">Questions</span>
+        </h3>
+      </div>
+      <div class="row">
+        <!-- 1st Column -->
+        <div class="span6">
+          <div class="accordion-group">
+            <div class="accordion-heading togglize">
+              <a
+                class="accordion-toggle"
+                data-toggle="collapse"
+                data-parent="#"
+                href="#collapseOne"
+              > What time will the ceremony start? <span class="font-icon-plus"></span> <span
+                class="font-icon-minus"
+              ></span>
+              </a>
             </div>
-            <!-- End 1st Column -->
-
-            <!-- 2nd Column -->
-            <div class="span6">
-                <div class="accordion-group">
-                    <div class="accordion-heading togglize">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseSix">
-                            Where can we park our car / motorcycle?
-                            <span class="font-icon-plus"></span>
-                            <span class="font-icon-minus"></span>
-                        </a>
-                    </div>
-                    <div id="collapseSix" class="accordion-body collapse">
-                        <div class="accordion-inner">There's an alloted parking space for you. Basta ikaw may space lagi sa puso namin :)
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-group">
-                    <div class="accordion-heading togglize">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseSeven">
-                            Can I proceed directly to reception?
-                            <span class="font-icon-plus"></span>
-                            <span class="font-icon-minus"></span>
-                        </a>
-                    </div>
-                    <div id="collapseSeven" class="accordion-body collapse">
-                        <div class="accordion-inner">Yes you may but it would surely warm our hearts to see you when we exchange our vows. Malay mo biglang magbago yung reception venue. Mag-isa ka na lang bigla. hahahah.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-group">
-                    <div class="accordion-heading togglize">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseEight">
-                            What time will the reception end?
-                            <span class="font-icon-plus"></span>
-                            <span class="font-icon-minus"></span>
-                        </a>
-                    </div>
-                    <div id="collapseEight" class="accordion-body collapse">
-                        <div class="accordion-inner">We aim to end the program at 8:00 PM. Wag pong eat and run. Ang tunay na kaibigan 'di nang-iiwan. hahahaha
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-group">
-                    <div class="accordion-heading togglize">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseNine">
-                            Do you have any gift preference?
-                            <span class="font-icon-plus"></span>
-                            <span class="font-icon-minus"></span>
-                        </a>
-                    </div>
-                    <div id="collapseNine" class="accordion-body collapse">
-                        <div class="accordion-inner">Anything from you will be a blessing. But for your convenience, monetary gift would be preferred. Pero kung gusto mong magregalo ng 50 inch smart TV or lazy boy ay malugod naman naming tatanggapin :)
-                        </div>
-                    </div>
-                </div>
-
+            <div
+              id="collapseOne"
+              class="accordion-body collapse"
+            >
+              <div class="accordion-inner">Wedding ceremony march will start at exactly 3:00
+                PM. Baguhin natin ang Filipino time culture :)</div>
             </div>
-            <!-- End 2nd column -->
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading togglize">
+              <a
+                class="accordion-toggle"
+                data-toggle="collapse"
+                data-parent="#"
+                href="#collapseTwo"
+              > What is the dress code? <span class="font-icon-plus"></span> <span
+                class="font-icon-minus"
+              ></span>
+              </a>
+            </div>
+            <div
+              id="collapseTwo"
+              class="accordion-body collapse"
+            >
+              <div class="accordion-inner">Our color motif is burgundy. Please wear formal
+                attire. Coat or longsleeves for men and dress for women</div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading togglize">
+              <a
+                class="accordion-toggle"
+                data-toggle="collapse"
+                data-parent="#"
+                href="#collapseThree"
+              > What if I said "yes" to the RVSP pero hindi na ko makakapunta? <span
+                class="font-icon-plus"
+              ></span> <span class="font-icon-minus"></span>
+              </a>
+            </div>
+            <div
+              id="collapseThree"
+              class="accordion-body collapse"
+            >
+              <div class="accordion-inner">#paasa :D Joke! Please inform us ASAP so we can
+                give your alloted seat to someone else.</div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading togglize">
+              <a
+                class="accordion-toggle"
+                data-toggle="collapse"
+                data-parent="#"
+                href="#collapseFour"
+              > Can I bring someone else with me, e.g. kids? <span class="font-icon-plus"></span> <span
+                class="font-icon-minus"
+              ></span>
+              </a>
+            </div>
+            <div
+              id="collapseFour"
+              class="accordion-body collapse"
+            >
+              <div class="accordion-inner">We request that only those who are invited will
+                come. Please check the invitation for alloted seats. As much as we'd like to invite
+                everyone, we can only invite a number of guests due to limited seats.</div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading togglize">
+              <a
+                class="accordion-toggle"
+                data-toggle="collapse"
+                data-parent="#"
+                href="#collapseFive"
+              > Am I allowed to take photos and videos during the wedding ceremony? <span
+                class="font-icon-plus"
+              ></span> <span class="font-icon-minus"></span>
+              </a>
+            </div>
+            <div
+              id="collapseFive"
+              class="accordion-body collapse"
+            >
+              <div class="accordion-inner">We are respectfully asking you to refrain from
+                using gadgets during the ceremony proper. We have official P/V to capture the
+                moments. Bawi ka na lang sa cocktails and reception. #hansedido :)</div>
+            </div>
+          </div>
         </div>
+        <!-- End 1st Column -->
+        <!-- 2nd Column -->
+        <div class="span6">
+          <div class="accordion-group">
+            <div class="accordion-heading togglize">
+              <a
+                class="accordion-toggle"
+                data-toggle="collapse"
+                data-parent="#"
+                href="#collapseSix"
+              > Where can we park our car / motorcycle? <span class="font-icon-plus"></span> <span
+                class="font-icon-minus"
+              ></span>
+              </a>
+            </div>
+            <div
+              id="collapseSix"
+              class="accordion-body collapse"
+            >
+              <div class="accordion-inner">There's an alloted parking space for you. Basta
+                ikaw may space lagi sa puso namin :)</div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading togglize">
+              <a
+                class="accordion-toggle"
+                data-toggle="collapse"
+                data-parent="#"
+                href="#collapseSeven"
+              > Can I proceed directly to reception? <span class="font-icon-plus"></span> <span
+                class="font-icon-minus"
+              ></span>
+              </a>
+            </div>
+            <div
+              id="collapseSeven"
+              class="accordion-body collapse"
+            >
+              <div class="accordion-inner">Yes you may but it would surely warm our hearts to
+                see you when we exchange our vows. Malay mo biglang magbago yung reception venue.
+                Mag-isa ka na lang bigla. hahahah.</div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading togglize">
+              <a
+                class="accordion-toggle"
+                data-toggle="collapse"
+                data-parent="#"
+                href="#collapseEight"
+              > What time will the reception end? <span class="font-icon-plus"></span> <span
+                class="font-icon-minus"
+              ></span>
+              </a>
+            </div>
+            <div
+              id="collapseEight"
+              class="accordion-body collapse"
+            >
+              <div class="accordion-inner">We aim to end the program at 8:00 PM. Wag pong eat
+                and run. Ang tunay na kaibigan 'di nang-iiwan. hahahaha</div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading togglize">
+              <a
+                class="accordion-toggle"
+                data-toggle="collapse"
+                data-parent="#"
+                href="#collapseNine"
+              > Do you have any gift preference? <span class="font-icon-plus"></span> <span
+                class="font-icon-minus"
+              ></span>
+              </a>
+            </div>
+            <div
+              id="collapseNine"
+              class="accordion-body collapse"
+            >
+              <div class="accordion-inner">Anything from you will be a blessing. But for your
+                convenience, monetary gift would be preferred. Pero kung gusto mong magregalo ng 50
+                inch smart TV or lazy boy ay malugod naman naming tatanggapin :)</div>
+            </div>
+          </div>
+        </div>
+        <!-- End 2nd column -->
+      </div>
     </div>
-</div>
-<!-- End FAQ -->
-
-<!-- Our Work Section -->
-<div id="work" class="page">
-	<div class="container">
-    	<!-- Title Page -->
-        <div class="row">
-            <div class="span12">
-                <div class="title-page">
-                    <h2 class="title">Our Work</h2>
-                    <h3 class="title-description">Check Out Our Projects on <a href="#">Dribbble</a>.</h3>
-                </div>
+  </div>
+  <!-- End FAQ -->
+  <!-- RVSP -->
+  <div
+    id="rvsp"
+    class="animsition page"
+  >
+    <div class="container container-contact100 wow lightSpeedIn">
+      <div class="wrap-contact100">
+        <form
+          id="hs-rvsp-form"
+          class="contact100-form validate-form rvsp-form contact-form"
+          method="post"
+        >
+          <span class="contact100-form-title">
+            <h2 class="title">
+              <span class="black-highlight">RSVP</span>
+            </h2>
+          </span>
+          <div
+            id="rvsp-msg-error"
+            class="isa_info"
+            style="display: none"
+          >
+            <i class="fa fa-info-circle"></i> <span id="rvsp-error"></span>
+          </div>
+          <div
+            id="rvsp-msg-success"
+            class="isa_success"
+            style="display: none"
+          >
+            <i class="fa fa-check"></i> <span id="rvsp-success"></span>
+          </div>
+          <label
+            class="label-input100"
+            for="first-name"
+          >Name *</label>
+          <div
+            class="wrap-input100 rs1-wrap-input100 validate-input"
+            data-validate="Required"
+          >
+            <input
+              id="first-name"
+              class="input100"
+              type="text"
+              name="first-name"
+              placeholder="First name"
+            > <span class="focus-input100"></span>
+          </div>
+          <div
+            class="wrap-input100 rs2-wrap-input100 validate-input"
+            data-validate="Required"
+          >
+            <input
+              class="input100"
+              type="text"
+              name="last-name"
+              placeholder="Last name"
+            > <span class="focus-input100"></span>
+          </div>
+          <label
+            class="label-input100"
+            for="message"
+          >Message</label>
+          <div class="wrap-input100">
+            <textarea
+              id="message"
+              class="input100"
+              name="message"
+              placeholder="Message"
+            ></textarea>
+            <span class="focus-input100"></span>
+          </div>
+          <div class="container-contact100-form-btn">
+            <a
+              class="button button-medium contact100-form-btn"
+              name="rvsp-submit"
+              id="rvsp-confirm"
+              value="1"
+            >Confirm</a> <a
+              class="button button-medium contact100-form-btn"
+              name="rvsp-submit"
+              id="rvsp-regret"
+              value="2"
+            >Regret</a>
+          </div>
+          <input
+            type="hidden"
+            name="action"
+            value="rvsp_submission"
+          >
+        </form>
+        <div
+          class="contact100-more flex-col-c-m"
+          style="background-image: url('_include/img/venue.jpg')"
+        >
+          <div class="dis-flex size1 p-b-47">
+            <div class="txt1 p-r-25">
+              <span class="lnr font-icon-map-marker-2"></span>
             </div>
+            <div class="flex-col size2">
+              <h3 class="txt1 p-b-20 title">Ceremony and Reception</h3>
+              <span class="txt2"> Mango Farm, 22 Shield, Antipolo, 1870 Rizal </span>
+            </div>
+          </div>
+          <div class="dis-flex size1 p-b-47">
+            <div class="txt1 p-r-25">
+              <span class="lnr font-icon-heart"></span>
+            </div>
+            <div class="flex-col size2">
+              <span class="txt1 p-b-20">
+                <h3 class="txt1 p-b-20 title">Ceremony</h3>
+              </span> <span class="txt3"> <span class="highlight">3:00 PM</span>
+              </span>
+            </div>
+          </div>
+          <div class="dis-flex size1 p-b-47">
+            <div class="txt1 p-r-25">
+              <span class="lnr font-icon-glass_2"></span>
+            </div>
+            <div class="flex-col size2">
+              <h3 class="txt1 p-b-20 title">Reception</h3>
+              <span class="txt3"> <span class="highlight">6:00 PM</span>
+              </span>
+            </div>
+          </div>
         </div>
-        <!-- End Title Page -->
-        
-        <!-- Portfolio Projects -->
-        <div class="row">
-        	<div class="span3">
-            	<!-- Filter -->
-                <nav id="options" class="work-nav">
-                    <ul id="filters" class="option-set" data-option-key="filter">
-                    	<li class="type-work">Type of Work</li>
-                        <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
-                        <li><a href="#filter" data-option-value=".design">Design</a></li>
-                        <li><a href="#filter" data-option-value=".photography">Photography</a></li>
-                        <li><a href="#filter" data-option-value=".video">Video</a></li>
-                    </ul>
-                </nav>
-                <!-- End Filter -->
-            </div>
-            
-            <div class="span9">
-            	<div class="row">
-                	<section id="projects">
-                    	<ul id="thumbs">
-                        
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The City" href="_include/img/work/full/image-01-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-01.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Office" href="_include/img/work/full/image-02-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-02.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 photography">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains" href="_include/img/work/full/image-03-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-03.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 video">
-                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                            	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo" href="http://vimeo.com/51460511">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-08.jpg" alt="Video">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 photography">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Sea" href="_include/img/work/full/image-04-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-04.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 photography">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Clouds" href="_include/img/work/full/image-05-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-05.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 video">
-                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                            	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo" href="http://vimeo.com/50834315">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-09.jpg" alt="Video">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Dark" href="_include/img/work/full/image-06-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-06.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Beach" href="_include/img/work/full/image-07-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-07.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                        </ul>
-                    </section>
-                    
-            	</div>
-            </div>
-        </div>
-        <!-- End Portfolio Projects -->
+      </div>
     </div>
-</div>
-<!-- End Our Work Section -->
-
-<!-- About Section -->
-<div id="about" class="page-alternate">
-<div class="container">
-    <!-- Title Page -->
-    <div class="row">
+  </div>
+  <!-- End RSVP -->
+  <!-- Our Work Section -->
+  <div
+    id="work"
+    class="page"
+  >
+    <div class="container">
+      <!-- Title Page -->
+      <div class="row">
         <div class="span12">
-            <div class="title-page">
-                <h2 class="title">About Us</h2>
-                <h3 class="title-description">Learn About our Team &amp; Culture.</h3>
-            </div>
+          <div class="title-page">
+            <h2 class="title">Our Work</h2>
+            <h3 class="title-description">
+              Check Out Our Projects on <a href="#">Dribbble</a>.
+            </h3>
+          </div>
         </div>
-    </div>
-    <!-- End Title Page -->
-    
-    <!-- People -->
-    <div class="row">
-    	
-        <!-- Start Profile -->
-    	<div class="span4 profile">
-        	<div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">CTO/Founder</span>
-                </div>
-                <img src="_include/img/profile/profile-01.jpg" alt="John Doe">
-            </div>
-            <h3 class="profile-name">John Doe</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            	
-            <div class="social">
-            	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-dribbble"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Profile -->
-        
-        <!-- Start Profile -->
-    	<div class="span4 profile">
-        	<div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Creative Director</span>
-                </div>
-                <img src="_include/img/profile/profile-02.jpg" alt="Jane Helf">
-            </div>
-            <h3 class="profile-name">Jane Helf</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            	
-            <div class="social">
-            	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-email"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Profile -->
-        
-        <!-- Start Profile -->
-    	<div class="span4 profile">
-        	<div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Lead Designer</span>
-                </div>
-                <img src="_include/img/profile/profile-03.jpg" alt="Joshua Insanus">
-            </div>
-            <h3 class="profile-name">Joshua Insanus</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            	
-            <div class="social">
-            	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-linkedin"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-google-plus"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-vimeo"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Profile -->
-        
-    </div>
-    <!-- End People -->
-</div>
-</div>
-<!-- End About Section -->
-
-
-<!-- Contact Section -->
-<div id="contact" class="page">
-<div class="container">
-    <!-- Title Page -->
-    <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">Get in Touch</h2>
-                <h3 class="title-description">We’re currently accepting new client projects. We look forward to serving you.</h3>
-            </div>
-        </div>
-    </div>
-    <!-- End Title Page -->
-    
-    <!-- Contact Form -->
-    <div class="row">
-    	<div class="span9">
-        
-        	<form id="contact-form" class="contact-form" action="#">
-            	<p class="contact-name">
-            		<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
-                </p>
-                <p class="contact-email">
-                	<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
-                </p>
-                <p class="contact-message">
-                	<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
-                </p>
-                <p class="contact-submit">
-                	<a id="contact-submit" class="submit" href="#">Send Your Email</a>
-                </p>
-                
-                <div id="response">
-                
-                </div>
-            </form>
-         
-        </div>
-        
+      </div>
+      <!-- End Title Page -->
+      <!-- Portfolio Projects -->
+      <div class="row">
         <div class="span3">
-        	<div class="contact-details">
-        		<h3>Contact Details</h3>
-                <ul>
-                    <li><a href="#">rsvp@hansedido.com</a></li>
-                    <li>(916) 375-2525</li>
-                    <li>
-                        Han Sed I Do
-                        <br>
-                        February 25, 2020
-                    </li>
-                </ul>
-            </div>
+          <!-- Filter -->
+          <nav
+            id="options"
+            class="work-nav"
+          >
+            <ul
+              id="filters"
+              class="option-set"
+              data-option-key="filter"
+            >
+              <li class="type-work">Type of Work</li>
+              <li><a
+                href="#filter"
+                data-option-value="*"
+                class="selected"
+              >All Projects</a></li>
+              <li><a
+                href="#filter"
+                data-option-value=".design"
+              >Design</a></li>
+              <li><a
+                href="#filter"
+                data-option-value=".photography"
+              >Photography</a></li>
+              <li><a
+                href="#filter"
+                data-option-value=".video"
+              >Video</a></li>
+            </ul>
+          </nav>
+          <!-- End Filter -->
         </div>
-    </div>
-    <!-- End Contact Form -->
-</div>
-</div>
-<!-- End Contact Section -->
-
-<!-- Twitter Feed -->
-<div id="twitter-feed" class="page-alternate">
-	<div class="container">
-    	<div class="row">
-            <div class="span12">
-                <div class="follow">
-                    <a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><i class="font-icon-social-twitter"></i></a>
-                </div>
-                    
-                <div id="ticker" class="query"> 
-                </div>
-            </div>
+        <div class="span9">
+          <div class="row">
+            <section id="projects">
+              <ul id="thumbs">
+                <!-- Item Project and Filter Name -->
+                <li class="item-thumbs span3 design">
+                  <!-- Fancybox - Gallery Enabled - Title - Full Image --> <a
+                  class="hover-wrap fancybox"
+                  data-fancybox-group="gallery"
+                  title="The City"
+                  href="_include/img/work/full/image-01-full.jpg"
+                > <span class="overlay-img"></span> <span class="overlay-img-thumb font-icon-plus"></span>
+                </a> <!-- Thumb Image and Description --> <img
+                  src="_include/img/work/thumbs/image-01.jpg"
+                  alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis."
+                >
+                </li>
+                <!-- End Item Project -->
+                <!-- Item Project and Filter Name -->
+                <li class="item-thumbs span3 design">
+                  <!-- Fancybox - Gallery Enabled - Title - Full Image --> <a
+                  class="hover-wrap fancybox"
+                  data-fancybox-group="gallery"
+                  title="The Office"
+                  href="_include/img/work/full/image-02-full.jpg"
+                > <span class="overlay-img"></span> <span class="overlay-img-thumb font-icon-plus"></span>
+                </a> <!-- Thumb Image and Description --> <img
+                  src="_include/img/work/thumbs/image-02.jpg"
+                  alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis."
+                >
+                </li>
+                <!-- End Item Project -->
+                <!-- Item Project and Filter Name -->
+                <li class="item-thumbs span3 photography">
+                  <!-- Fancybox - Gallery Enabled - Title - Full Image --> <a
+                  class="hover-wrap fancybox"
+                  data-fancybox-group="gallery"
+                  title="The Mountains"
+                  href="_include/img/work/full/image-03-full.jpg"
+                > <span class="overlay-img"></span> <span class="overlay-img-thumb font-icon-plus"></span>
+                </a> <!-- Thumb Image and Description --> <img
+                  src="_include/img/work/thumbs/image-03.jpg"
+                  alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis."
+                >
+                </li>
+                <!-- End Item Project -->
+                <!-- Item Project and Filter Name -->
+                <li class="item-thumbs span3 video">
+                  <!-- Fancybox Media - Gallery Enabled - Title - Link to Video --> <a
+                  class="hover-wrap fancybox-media"
+                  data-fancybox-group="video"
+                  title="Video Content From Vimeo"
+                  href="http://vimeo.com/51460511"
+                > <span class="overlay-img"></span> <span class="overlay-img-thumb font-icon-plus"></span>
+                </a> <!-- Thumb Image and Description --> <img
+                  src="_include/img/work/thumbs/image-08.jpg"
+                  alt="Video"
+                >
+                </li>
+                <!-- End Item Project -->
+                <!-- Item Project and Filter Name -->
+                <li class="item-thumbs span3 photography">
+                  <!-- Fancybox - Gallery Enabled - Title - Full Image --> <a
+                  class="hover-wrap fancybox"
+                  data-fancybox-group="gallery"
+                  title="The Sea"
+                  href="_include/img/work/full/image-04-full.jpg"
+                > <span class="overlay-img"></span> <span class="overlay-img-thumb font-icon-plus"></span>
+                </a> <!-- Thumb Image and Description --> <img
+                  src="_include/img/work/thumbs/image-04.jpg"
+                  alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis."
+                >
+                </li>
+                <!-- End Item Project -->
+                <!-- Item Project and Filter Name -->
+                <li class="item-thumbs span3 photography">
+                  <!-- Fancybox - Gallery Enabled - Title - Full Image --> <a
+                  class="hover-wrap fancybox"
+                  data-fancybox-group="gallery"
+                  title="Clouds"
+                  href="_include/img/work/full/image-05-full.jpg"
+                > <span class="overlay-img"></span> <span class="overlay-img-thumb font-icon-plus"></span>
+                </a> <!-- Thumb Image and Description --> <img
+                  src="_include/img/work/thumbs/image-05.jpg"
+                  alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis."
+                >
+                </li>
+                <!-- End Item Project -->
+                <!-- Item Project and Filter Name -->
+                <li class="item-thumbs span3 video">
+                  <!-- Fancybox Media - Gallery Enabled - Title - Link to Video --> <a
+                  class="hover-wrap fancybox-media"
+                  data-fancybox-group="video"
+                  title="Video Content From Vimeo"
+                  href="http://vimeo.com/50834315"
+                > <span class="overlay-img"></span> <span class="overlay-img-thumb font-icon-plus"></span>
+                </a> <!-- Thumb Image and Description --> <img
+                  src="_include/img/work/thumbs/image-09.jpg"
+                  alt="Video"
+                >
+                </li>
+                <!-- End Item Project -->
+                <!-- Item Project and Filter Name -->
+                <li class="item-thumbs span3 design">
+                  <!-- Fancybox - Gallery Enabled - Title - Full Image --> <a
+                  class="hover-wrap fancybox"
+                  data-fancybox-group="gallery"
+                  title="The Dark"
+                  href="_include/img/work/full/image-06-full.jpg"
+                > <span class="overlay-img"></span> <span class="overlay-img-thumb font-icon-plus"></span>
+                </a> <!-- Thumb Image and Description --> <img
+                  src="_include/img/work/thumbs/image-06.jpg"
+                  alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis."
+                >
+                </li>
+                <!-- End Item Project -->
+                <!-- Item Project and Filter Name -->
+                <li class="item-thumbs span3 design">
+                  <!-- Fancybox - Gallery Enabled - Title - Full Image --> <a
+                  class="hover-wrap fancybox"
+                  data-fancybox-group="gallery"
+                  title="The Beach"
+                  href="_include/img/work/full/image-07-full.jpg"
+                > <span class="overlay-img"></span> <span class="overlay-img-thumb font-icon-plus"></span>
+                </a> <!-- Thumb Image and Description --> <img
+                  src="_include/img/work/thumbs/image-07.jpg"
+                  alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis."
+                >
+                </li>
+                <!-- End Item Project -->
+              </ul>
+            </section>
+          </div>
         </div>
+      </div>
+      <!-- End Portfolio Projects -->
     </div>
-</div>
-<!-- End Twitter Feed -->
-
-<!-- Socialize -->
-<div id="social-area" class="page">
-	<div class="container">
-    	<div class="row">
-            <div class="span12">
-                <nav id="social">
-                    <ul>
-                        <li><a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
-                        <li><a href="http://dribbble.com/Bluxart" title="Follow Me on Dribbble" target="_blank"><span class="font-icon-social-dribbble"></span></a></li>
-                        <li><a href="http://forrst.com/people/Bluxart" title="Follow Me on Forrst" target="_blank"><span class="font-icon-social-forrst"></span></a></li>
-                        <li><a href="http://www.behance.net/alessioatzeni" title="Follow Me on Behance" target="_blank"><span class="font-icon-social-behance"></span></a></li>
-                        <li><a href="https://www.facebook.com/Bluxart" title="Follow Me on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
-                        <li><a href="https://plus.google.com/105500420878314068694" title="Follow Me on Google Plus" target="_blank"><span class="font-icon-social-google-plus"></span></a></li>
-                        <li><a href="http://www.linkedin.com/in/alessioatzeni" title="Follow Me on LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
-                        <li><a href="http://themeforest.net/user/Bluxart" title="Follow Me on ThemeForest" target="_blank"><span class="font-icon-social-envato"></span></a></li>
-                        <li><a href="http://zerply.com/Bluxart/public" title="Follow Me on Zerply" target="_blank"><span class="font-icon-social-zerply"></span></a></li>
-                    </ul>
-                </nav>
-            </div>
+  </div>
+  <!-- End Our Work Section -->
+  <!-- About Section -->
+  <div
+    id="about"
+    class="page-alternate"
+  >
+    <div class="container">
+      <!-- Title Page -->
+      <div class="row">
+        <div class="span12">
+          <div class="title-page">
+            <h2 class="title">About Us</h2>
+            <h3 class="title-description">Learn About our Team &amp; Culture.</h3>
+          </div>
         </div>
+      </div>
+      <!-- End Title Page -->
+      <!-- People -->
+      <div class="row">
+        <!-- Start Profile -->
+        <div class="span4 profile">
+          <div class="image-wrap">
+            <div class="hover-wrap">
+              <span class="overlay-img"></span> <span class="overlay-text-thumb">CTO/Founder</span>
+            </div>
+            <img
+              src="_include/img/profile/profile-01.jpg"
+              alt="John Doe"
+            >
+          </div>
+          <h3 class="profile-name">John Doe</h3>
+          <p class="profile-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a
+              href="#"
+            >hendrerit dictum</a>. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper
+            metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos himenaeos.
+          </p>
+          <div class="social">
+            <ul class="social-icons">
+              <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
+              <li><a href="#"><i class="font-icon-social-dribbble"></i></a></li>
+              <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Profile -->
+        <!-- Start Profile -->
+        <div class="span4 profile">
+          <div class="image-wrap">
+            <div class="hover-wrap">
+              <span class="overlay-img"></span> <span class="overlay-text-thumb">Creative
+                Director</span>
+            </div>
+            <img
+              src="_include/img/profile/profile-02.jpg"
+              alt="Jane Helf"
+            >
+          </div>
+          <h3 class="profile-name">Jane Helf</h3>
+          <p class="profile-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a
+              href="#"
+            >hendrerit dictum</a>. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper
+            metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos himenaeos.
+          </p>
+          <div class="social">
+            <ul class="social-icons">
+              <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
+              <li><a href="#"><i class="font-icon-social-email"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Profile -->
+        <!-- Start Profile -->
+        <div class="span4 profile">
+          <div class="image-wrap">
+            <div class="hover-wrap">
+              <span class="overlay-img"></span> <span class="overlay-text-thumb">Lead
+                Designer</span>
+            </div>
+            <img
+              src="_include/img/profile/profile-03.jpg"
+              alt="Joshua Insanus"
+            >
+          </div>
+          <h3 class="profile-name">Joshua Insanus</h3>
+          <p class="profile-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a
+              href="#"
+            >hendrerit dictum</a>. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper
+            metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos himenaeos.
+          </p>
+          <div class="social">
+            <ul class="social-icons">
+              <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
+              <li><a href="#"><i class="font-icon-social-linkedin"></i></a></li>
+              <li><a href="#"><i class="font-icon-social-google-plus"></i></a></li>
+              <li><a href="#"><i class="font-icon-social-vimeo"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Profile -->
+      </div>
+      <!-- End People -->
     </div>
-</div>
-<!-- End Socialize -->
-
-<!-- Footer -->
-<footer>
-	<p class="credits">&copy;2019 <span class="highlight">Han</span> Sed I Do.</p>
-</footer>
-<!-- End Footer -->
-
-<!-- Back To Top -->
-<a id="back-to-top" href="#">
-	<i class="font-icon-arrow-simple-up"></i>
-</a>
-<!-- End Back to Top -->
-
-
-<!-- Js -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
-<script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
-<script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
-<script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
-<script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
-<script src="_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
-<script src="_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
-<script src="_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
-<script src="_include/js/jquery.tweet.js"></script> <!-- Tweet -->
-<script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
-<script src="_include/js/main.js"></script> <!-- Default JS -->
-
-<!-- Jhesed scripts -->
-
-<script src="_include/js/jquery.countdown.min.js"></script>
-<script src="_include/js/countdown-timer.js"></script>
-
-<!-- End Jhesed scripts -->
-
-<!-- End Js -->
-
+  </div>
+  <!-- End About Section -->
+  <!-- Contact Section -->
+  <div
+    id="contact"
+    class="page"
+  >
+    <div class="container">
+      <!-- Title Page -->
+      <div class="row">
+        <div class="span12">
+          <div class="title-page">
+            <h2 class="title">Get in Touch</h2>
+            <h3 class="title-description">We’re currently accepting new client projects. We
+              look forward to serving you.</h3>
+          </div>
+        </div>
+      </div>
+      <!-- End Title Page -->
+      <!-- Contact Form -->
+      <div class="row">
+        <div class="span9">
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="#"
+          >
+            <p class="contact-name">
+              <input
+                id="contact_name"
+                type="text"
+                placeholder="Full Name"
+                value=""
+                name="name"
+              />
+            </p>
+            <p class="contact-email">
+              <input
+                id="contact_email"
+                type="text"
+                placeholder="Email Address"
+                value=""
+                name="email"
+              />
+            </p>
+            <p class="contact-message">
+              <textarea
+                id="contact_message"
+                placeholder="Your Message"
+                name="message"
+                rows="15"
+                cols="40"
+              ></textarea>
+            </p>
+            <p class="contact-submit">
+              <a
+                id="contact-submit"
+                class="submit"
+                href="#"
+              >Send Your Email</a>
+            </p>
+            <div id="response"></div>
+          </form>
+        </div>
+        <div class="span3">
+          <div class="contact-details">
+            <h3>Contact Details</h3>
+            <ul>
+              <li><a href="#">rsvp@hansedido.com</a></li>
+              <li>(916) 375-2525</li>
+              <li>Han Sed I Do <br> February 25, 2020
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Contact Form -->
+    </div>
+  </div>
+  <!-- End Contact Section -->
+  <!-- Twitter Feed -->
+  <div
+    id="twitter-feed"
+    class="page-alternate"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <div class="follow">
+            <a
+              href="https://twitter.com/Bluxart"
+              title="Follow Me on Twitter"
+              target="_blank"
+            ><i class="font-icon-social-twitter"></i></a>
+          </div>
+          <div
+            id="ticker"
+            class="query"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Twitter Feed -->
+  <!-- Socialize -->
+  <div
+    id="social-area"
+    class="page"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <nav id="social">
+            <ul>
+              <li><a
+                href="https://twitter.com/Bluxart"
+                title="Follow Me on Twitter"
+                target="_blank"
+              ><span class="font-icon-social-twitter"></span></a></li>
+              <li><a
+                href="http://dribbble.com/Bluxart"
+                title="Follow Me on Dribbble"
+                target="_blank"
+              ><span class="font-icon-social-dribbble"></span></a></li>
+              <li><a
+                href="http://forrst.com/people/Bluxart"
+                title="Follow Me on Forrst"
+                target="_blank"
+              ><span class="font-icon-social-forrst"></span></a></li>
+              <li><a
+                href="http://www.behance.net/alessioatzeni"
+                title="Follow Me on Behance"
+                target="_blank"
+              ><span class="font-icon-social-behance"></span></a></li>
+              <li><a
+                href="https://www.facebook.com/Bluxart"
+                title="Follow Me on Facebook"
+                target="_blank"
+              ><span class="font-icon-social-facebook"></span></a></li>
+              <li><a
+                href="https://plus.google.com/105500420878314068694"
+                title="Follow Me on Google Plus"
+                target="_blank"
+              ><span class="font-icon-social-google-plus"></span></a></li>
+              <li><a
+                href="http://www.linkedin.com/in/alessioatzeni"
+                title="Follow Me on LinkedIn"
+                target="_blank"
+              ><span class="font-icon-social-linkedin"></span></a></li>
+              <li><a
+                href="http://themeforest.net/user/Bluxart"
+                title="Follow Me on ThemeForest"
+                target="_blank"
+              ><span class="font-icon-social-envato"></span></a></li>
+              <li><a
+                href="http://zerply.com/Bluxart/public"
+                title="Follow Me on Zerply"
+                target="_blank"
+              ><span class="font-icon-social-zerply"></span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Socialize -->
+  <!-- Footer -->
+  <footer>
+    <p class="credits">
+      &copy;2019 <span class="highlight">Han</span> Sed I Do.
+    </p>
+  </footer>
+  <!-- End Footer -->
+  <!-- Back To Top -->
+  <a
+    id="back-to-top"
+    href="#"
+  > <i class="font-icon-arrow-simple-up"></i>
+  </a>
+  <!-- End Back to Top -->
+  <!-- Js -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <!-- jQuery Core -->
+  <script src="_include/js/bootstrap.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="_include/js/supersized.3.2.7.min.js"></script>
+  <!-- Slider -->
+  <script src="_include/js/waypoints.js"></script>
+  <!-- WayPoints -->
+  <script src="_include/js/waypoints-sticky.js"></script>
+  <!-- Waypoints for Header -->
+  <script src="_include/js/jquery.isotope.js"></script>
+  <!-- Isotope Filter -->
+  <script src="_include/js/jquery.fancybox.pack.js"></script>
+  <!-- Fancybox -->
+  <script src="_include/js/jquery.fancybox-media.js"></script>
+  <!-- Fancybox for Media -->
+  <script src="_include/js/jquery.tweet.js"></script>
+  <!-- Tweet -->
+  <script src="_include/js/plugins.js"></script>
+  <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+  <script src="_include/js/main.js"></script>
+  <!-- Default JS -->
+  <!-- Jhesed scripts -->
+  <script src="_include/js/jquery.countdown.min.js"></script>
+  <script src="_include/js/countdown-timer.js"></script>
+  <script src="_include/js/rsvp-form.js"></script>
+  <!-- End Jhesed scripts -->
+  <!-- End Js -->
 </body>
 </html>

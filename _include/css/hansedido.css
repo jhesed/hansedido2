@@ -15,6 +15,9 @@ a.rsvp {
 span.highlight{
 	color:#DE5E60;
 }
+span.black-highlight{
+	color:#23262C;
+}
 
 .main-area-wrapper{ 
 	height: 100%; 
@@ -24,7 +27,6 @@ span.highlight{
 
 .main-area:after{ content:''; position: absolute; top: 0; bottom: 0;left: 0; right: 0; z-index: -1;  
 	opacity: .3; background: #000; }
-
 
 /* Bride Groom Section */
 
