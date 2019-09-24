@@ -78,10 +78,10 @@ BRUSHED.slider = function(){
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
 											// {image : '_include/img/slider-images/image01.jpeg', title : '<div class="slide-content">This</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image01.jpeg', title : '<a class="rsvp" href="#rsvp">RSVP</a>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image02.jpeg', title : '<a class="rsvp" href="#rsvp">RSVP</a>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image03.jpeg', title : '<a class="rsvp" href="#rsvp">RSVP</a>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image04.jpeg', title : '<a class="rsvp" href="#rsvp">RSVP</a>', thumb : '', url : ''}, 
+											{image : '_include/img/slider-images/image01.jpeg', title : '<a class="rsvp" href="#rvsp">RSVP</a>', thumb : '', url : ''},
+											{image : '_include/img/slider-images/image02.jpeg', title : '<a class="rsvp" href="#rvsp">RSVP</a>', thumb : '', url : ''},
+											{image : '_include/img/slider-images/image03.jpeg', title : '<a class="rsvp" href="#rvsp">RSVP</a>', thumb : '', url : ''},
+											{image : '_include/img/slider-images/image04.jpeg', title : '<a class="rsvp" href="#rvsp">RSVP</a>', thumb : '', url : ''}, 
 									],
 									
 		// Theme Options			   
