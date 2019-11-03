@@ -457,16 +457,14 @@ BRUSHED.rsvp = function(){
 	              url: "_include/php/rsvp.php",
 	              data: _data,
 	              success: function(response) {
-	           		console.log(response)
-
 	           		var success1 = "Thanks! See you on our wedding!"
 	              	var success2 = "We regret that you won't be able to attend."
 	              	var error = "Please check your spelling or directly contact us."
-	              	
+	              	var duplicate = "Oops, we already received and will honor your 1st RSVP. If you wish to change your decision, please contact us directly."
+
 	              	if (response.error == false){
 	              																													
-	              		$($form)[0].reset();	              		
-		         		console.log(response.attendance)
+	              		$($form)[0].reset();	         
 
 	              		if (response.attendance == 1){        		
 	              			$("#rvsp-success").html(success1);
@@ -475,16 +473,22 @@ BRUSHED.rsvp = function(){
 	              		}
 	              		else {	              				              					
 	              			$("#rvsp-error").html(success2);
-	              			$("#rvsp-msg-success").hide()
+	              			$("#rvsp-msg-success").hide();
 		              		$("#rvsp-msg-error").fadeIn("slow");	
 	              		}
 	              	}
-	              	else{	              		 	              				
+	              	else {	
+	              		if (response.ecode == "NOT_FOUND"){              		 	              				
 	              			$("#rvsp-error").html(error);
-	              			$("#rvsp-msg-success").hide()
-		              		$("#rvsp-msg-error").fadeIn("slow");	
-		              }
-	              }
+	              		}
+	              		else {
+	              			$("#rvsp-error").html(duplicate);
+	              		}
+              			$("#rvsp-msg-success").hide();
+	              		$("#rvsp-msg-error").fadeIn("slow");
+	              	}
+	            }
+
 	          });
 	      }
           return false;

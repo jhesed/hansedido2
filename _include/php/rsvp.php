@@ -33,6 +33,11 @@ if ($result == null) {
     $response['ecode'] = 'NOT_FOUND';
     exit(json_encode($response));
 }
+if ($result->attendance == 1 || $result->attendance == 2) {
+    $response['error'] = true;
+    $response['ecode'] = 'DUPLICATE';
+    exit(json_encode($response));   
+}
 
 // Update attendance value
 $update_query = "UPDATE $table_name SET attendance = " . $data["attendance"] . ", message = '" . $data["message"] . "' WHERE id = " . $result->id;
