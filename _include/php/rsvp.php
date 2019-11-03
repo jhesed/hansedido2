@@ -39,6 +39,13 @@ if ($result->attendance == 1 || $result->attendance == 2) {
     exit(json_encode($response));   
 }
 
+if ($data["attendance"] == 2) {
+    $message = file_get_contents('../../emails/rsvp/rejection.html');
+}
+else {
+    $message = file_get_contents('../../emails/rsvp/confirmation.html');
+}
+
 // Update attendance value
 $update_query = "UPDATE $table_name SET attendance = " . $data["attendance"] . ", message = '" . $data["message"] . "' WHERE id = " . $result->id;
 
@@ -51,7 +58,6 @@ $headers .= "CC: jhesed.tacadena@gmail.com\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 $subject = "[han-sed-i-do] Attendance Confirmation";
-$message = file_get_contents('../../emails/rsvp/confirmation.html');
 
 mail($result->email, $subject, $message, $headers);
 
