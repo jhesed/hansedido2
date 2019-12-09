@@ -1,5 +1,6 @@
 <?php
 	$to      = 'jhesed.tacadena@gmail.com';
+	$user 	 = 'jhesed';
 	$subject = "You're invited!";
 	$message = <<<EOD
 		<!DOCTYPE html>
@@ -136,11 +137,11 @@
 		          	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto !important;">
 		          		<tr>
 		          			<td width="40%" class="logo" style="text-align: left;">
-					            <h1 style="margin: 0; color: #000;	font-size: 20px; font-weight: 700; text-transform: uppercase; font-family: 'Nunito Sans', sans-serif; font-family: 'Nunito Sans', sans-serif; color: #000000;	margin-top: 0;"><a style="text-decoration: none; color: #000; font-size: 20px; font-weight: 700; text-transform: uppercase; font-family: 'Nunito Sans', sans-serif; color: #f5564e;" href="http://www.hansedido.com">Han Sed I Do</a></h1>
+					            <h1 style="margin: 0; color: #000;	font-size: 20px; font-weight: 700; text-transform: uppercase; font-family: 'Nunito Sans', sans-serif; font-family: 'Nunito Sans', sans-serif; color: #000000;	margin-top: 0;"><a style="text-decoration: none; color: #000; font-size: 20px; font-weight: 700; text-transform: uppercase; font-family: 'Nunito Sans', sans-serif; color: #f5564e;" href="https://hansedido.com">Han Sed I Do</a></h1>
 					          </td>
 					          <td width="60%" class="logo" style="text-align: right;">
 					            <ul style="padding:0">
-					            	<li style="	list-style: none; display: inline-block; margin-left: 5px; font-size: 12px;	font-weight: 700; text-transform: uppercase;"><a href="http://www.hansedido.com" style="text-decoration: none; color: rgba(0,0,0,.6);">Home</a></li>
+					            	<li style="	list-style: none; display: inline-block; margin-left: 5px; font-size: 12px;	font-weight: 700; text-transform: uppercase;"><a href="https://hansedido.com" style="text-decoration: none; color: rgba(0,0,0,.6);">Home</a></li>
 					            </ul>
 					          </td>
 		          		</tr>
@@ -148,7 +149,7 @@
 		          </td>
 			      </tr><!-- end tr -->
 						<tr>
-		          <td valign="middle" class="hero" style="position: relative; background-image: url('http://hansedido.com/_include/img/monogram.jpg'); background-size: cover; height: 600px;">
+		          <td valign="middle" class="hero" style="position: relative; background-image: url('https://hansedido.com/emails/rsvp/images/monogram.jpg'); background-size: cover; height: 600px;">
 		 
 		          </td>
 			      </tr><!-- end tr -->
@@ -163,7 +164,7 @@
 			          	<p>Dear <b><i>{USER}</i></b>,</p>
 			          	<p>You have a special place in our heart and we humbly invite you to be a part of our wedding.</p>
 			          	<p>Your presence will be a blessing.  </p>
-			          	<p>Please confirm your attendance <u>before</u> <b>January 1, 2020</b> via our website: <a href="www.hansedido.com" style="color: #f5564e">www.hansedido.com</a></p>
+			          	<p>Please confirm your attendance <u>before</u> <b>January 1, 2020</b> via our website: <a href="https://hansedido.com" style="color: #f5564e">www.hansedido.com</a></p>
 			          	<p>See you!</p>
 			          	<p>With love,</p>
 			          	<p><i>Hannah and Jhesed</i></p>
@@ -196,12 +197,17 @@
 		</html>
 EOD;
 
-	$headers = "From: " . strip_tags("rsvp@hansedido.com") . "\r\n";
-	$headers .= "Reply-To: ". strip_tags("rsvp@hansedido.com") . "\r\n";
-	$headers .= "CC: jhesed.tacadena@gmail.com\r\n";
-	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-	// mail($to, $subject, $message, $headers);
 
-	echo $message;
+$message = str_replace('{USER}', ucfirst($user), $message);
+
+$headers = "From: " . strip_tags("rsvp@hansedido.com") . "\r\n";
+$headers .= "Reply-To: ". strip_tags("rsvp@hansedido.com") . "\r\n";
+$headers .= "CC: jhesed.tacadena@gmail.com\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+$subject = "[han-sed-i-do] You are Invited";
+
+mail($to, $subject, $message, $headers);
+
+echo $message;
 ?>

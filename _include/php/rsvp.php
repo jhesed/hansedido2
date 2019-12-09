@@ -33,7 +33,7 @@ if ($result == null) {
     $response['ecode'] = 'NOT_FOUND';
     exit(json_encode($response));
 }
-if ($result->attendance == 1 || $result->attendance == 2) {
+if ($result->attendance != null) {
     $response['error'] = true;
     $response['ecode'] = 'DUPLICATE';
     exit(json_encode($response));   
@@ -45,6 +45,7 @@ if ($data["attendance"] == 2) {
 else {
     $message = file_get_contents('../../emails/rsvp/confirmation.html');
 }
+$message = str_replace('{USER}', ucwords($data["first_name"]), $message);
 
 // Update attendance value
 $update_query = "UPDATE $table_name SET attendance = " . $data["attendance"] . ", message = '" . $data["message"] . "' WHERE id = " . $result->id;
