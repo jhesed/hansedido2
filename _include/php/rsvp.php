@@ -1,5 +1,5 @@
 <?php
-
+header("Access-Control-Allow-Origin: *");
 require "db_config.php";
 
 /* Handles RSVP reservation logic */

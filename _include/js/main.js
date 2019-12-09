@@ -78,10 +78,10 @@ BRUSHED.slider = function(){
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
 											// {image : '_include/img/slider-images/image01.jpeg', title : '<div class="slide-content">This</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image01.jpeg', title : '<a class="rsvp" href="#rvsp">RSVP</a>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image02.jpeg', title : '<a class="rsvp" href="#rvsp">RSVP</a>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image03.jpeg', title : '<a class="rsvp" href="#rvsp">RSVP</a>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image04.jpeg', title : '<a class="rsvp" href="#rvsp">RSVP</a>', thumb : '', url : ''}, 
+											{image : '_include/img/slider-images/1.jpg', title : '<a class="rsvp" href="#rvsp">RSVP</a>', thumb : '', url : ''},
+											{image : '_include/img/slider-images/2.jpg', title : '<a class="rsvp" href="#rvsp">RSVP</a>', thumb : '', url : ''},
+											{image : '_include/img/slider-images/3.jpg', title : '<a class="rsvp" href="#rvsp">RSVP</a>', thumb : '', url : ''},
+											{image : '_include/img/slider-images/4.jpg', title : '<a class="rsvp" href="#rvsp">RSVP</a>', thumb : '', url : ''}, 
 									],
 									
 		// Theme Options			   
@@ -211,39 +211,6 @@ BRUSHED.contactForm = function(){
 		});
 		return false;
 	});
-}
-
-
-/* ==================================================
-   Twitter Feed
-================================================== */
-
-BRUSHED.tweetFeed = function(){
-	
-	var valueTop = -64; // Margin Top Value
-	
-    $("#ticker").tweet({
-          modpath: '_include/js/twitter/',
-          username: "Bluxart", // Change this with YOUR ID
-          page: 1,
-          avatar_size: 0,
-          count: 10,
-		  template: "{text}{time}",
-		  filter: function(t){ return ! /^@\w+/.test(t.tweet_raw_text); },
-          loading_text: "loading ..."
-	}).bind("loaded", function() {
-	  var ul = $(this).find(".tweet_list");
-	  var ticker = function() {
-		setTimeout(function() {
-			ul.find('li:first').animate( {marginTop: valueTop + 'px'}, 500, 'linear', function() {
-				$(this).detach().appendTo(ul).removeAttr('style');
-			});	
-		  ticker();
-		}, 5000);
-	  };
-	  ticker();
-	});
-	
 }
 
 
@@ -454,13 +421,19 @@ BRUSHED.rsvp = function(){
 
 	          $.ajax({
 	              type: 'POST',
-	              url: "_include/php/rsvp.php",
-	              data: _data,
+	              url: "https://hansedido.com/_include/php/rsvp.php",
+	              data: _data, 
 	              success: function(response) {
 	           		var success1 = "Thanks! See you on our wedding!"
 	              	var success2 = "We regret that you won't be able to attend."
 	              	var error = "Please check your spelling or directly contact us."
 	              	var duplicate = "Oops, we already received and will honor your 1st RSVP. If you wish to change your decision, please contact us directly."
+
+	              	console.log("--------")
+					console.log(response)
+					console.log(response.ecode)
+					console.log(response.error)
+					console.log("--------")
 
 	              	if (response.error == false){
 	              																													
@@ -477,12 +450,12 @@ BRUSHED.rsvp = function(){
 		              		$("#rvsp-msg-error").fadeIn("slow");	
 	              		}
 	              	}
-	              	else {	
-	              		if (response.ecode == "NOT_FOUND"){              		 	              				
-	              			$("#rvsp-error").html(error);
+	              	else {		              		
+	              		if (response.ecode == "DUPLICATE"){              		 	              				
+	              			$("#rvsp-error").html(duplicate);
 	              		}
 	              		else {
-	              			$("#rvsp-error").html(duplicate);
+	              			$("#rvsp-error").html(error);
 	              		}
               			$("#rvsp-msg-success").hide();
 	              		$("#rvsp-msg-error").fadeIn("slow");
@@ -526,6 +499,7 @@ $(document).ready(function(){
 		showSplash: true,
 		showPercentage: true,
 		autoClose: true,
+		onetimeLoad: true,
 		splashFunction: function() {
 			$('#circle').delay(250).animate({'opacity' : 1}, 500, 'linear');
 		}

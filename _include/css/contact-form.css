@@ -101,16 +101,19 @@ iframe {
 .txt1 {
   font-size: 18px;
   line-height: 1.2;
+  color: white;
 }
 
 .txt2 {
   font-size: 15px;
   line-height: 1.6;
+  color: white;
 }
 
 .txt3 {
   font-size: 15px;
   line-height: 1.6;
+  color: white;
 }
 
 /*==================================================================
@@ -139,7 +142,6 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
 }
 
 .wrap-contact100 {
@@ -333,7 +335,7 @@ textarea.input100 {
   min-width: 150px;
   height: 50px;
   border-radius: 2px;
-  background: #00ad5f;
+  background: #800020;
 
   font-size: 12px;
   line-height: 1.2;
@@ -344,10 +346,11 @@ textarea.input100 {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
+  color: white;
 }
 
 .contact100-form-btn:hover {
-  background: #333333;
+  background: #E2CCD5;
 }
 
 

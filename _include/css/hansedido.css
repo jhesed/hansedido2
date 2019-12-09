@@ -18,6 +18,9 @@ span.highlight{
 span.black-highlight{
 	color:#23262C;
 }
+span.highlight-light {
+  color:#E2CCD5;
+}
 
 .main-area-wrapper{ 
 	height: 100%; 
@@ -109,4 +112,11 @@ a.ReadMore:hover{ background-color:#ffae00; color:#fff; }
   position:absolute;
   left:0px;
   background: linear-gradient(to left bottom, #fff 49%, #E2CCD5 50%);
+}
+
+/*--------------------------------*/
+/* FANCY BOX */
+/*--------------------------------*/
+.fancybox-skin {
+  background: #E2CCD5;
 }

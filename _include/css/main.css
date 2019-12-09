@@ -204,33 +204,32 @@ h5,
 h6{
 	margin:0 0 20px 0;
 	color:black;
-	font-weight:550;
 	font-family: adora;
-	line-height:1.5em;
+	line-height:2em;
 }
 
 h1{
-	font-size:48px;
+	font-size:60px;
 }
 
 h2{
-	font-size:36px;
+	font-size:48px;
 }
 
 h3{
-	font-size:24px;
+	font-size:36px;
 }
 
 h4{
-	font-size:20px;
+	font-size:24px;
 }
 
 h5{
-	font-size:18px;
+	font-size:20px;
 }
 
 h6{
-	font-size:16px;
+	font-size:18px;
 }
 
 h3.spec {
@@ -981,8 +980,8 @@ nav#menu #menu-nav li a:hover {
 }
 
 #contact-form .submit {
-    background: #3C3F45;
-    color: #23262C;
+    background: #800020;
+    color: #E2CCD5;
     cursor: pointer;
     display: inline-block;
     font-size: 18px;
@@ -1157,7 +1156,6 @@ footer {
 }
 
 footer .credits {
-	color: #FFFFFF;
 	font-size: 13px;
 	margin-bottom: 0;
 	padding: 20px 0;
