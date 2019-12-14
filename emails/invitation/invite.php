@@ -1,6 +1,6 @@
 <?php
-	$to      = 'jhesed.tacadena@gmail.com';
-	$user 	 = 'jhesed';
+	$to      = 'tanlangcohannah@gmail.com';
+	$user 	 = 'Hannah';
 	$subject = "You're invited!";
 	$message = <<<EOD
 		<!DOCTYPE html>
