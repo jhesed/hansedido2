@@ -204,7 +204,7 @@ h5,
 h6{
 	margin:0 0 20px 0;
 	color:black;
-	font-family: adora;
+	font-family: adora;	
 	line-height:2em;
 }
 
@@ -915,7 +915,7 @@ nav#menu #menu-nav li a:hover {
 ================================================== */
 
 .contact-details h3 {
-	color: #FFFFFF;
+	color: #E2CCD5;
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 30px;
@@ -954,7 +954,7 @@ nav#menu #menu-nav li a:hover {
 	-moz-box-shadow: none;
 	box-shadow: none;
 	
-	background: white;
+	background: #E2CCD5;
     color: #FFFFFF;
     font-size: 16px;
     height: auto;
@@ -1000,58 +1000,13 @@ nav#menu #menu-nav li a:hover {
 
 #contact-form .submit:hover {
     background: #800020;
-    color: #FFFFFF;
+    color: #E2CCD5;
 }
 
 #response {
 	margin-top: 20px;
-	color: #FFFFFF;
+	color: #E2CCD5;
 }
-
-
-/* ==================================================
-   Twitter Feed
-================================================== */
-
-#twitter-feed {
-	padding: 100px 0 90px;
-	text-align: center;	
-}
-
-#twitter-feed .follow {
-	position: absolute;
-	bottom: 30px;
-	left: 50%;
-	margin-left: -8px;
-	font-size: 16px;	
-}
-
-#ticker .tweet_list {
-	margin: 0;
-	padding: 0;
-	height: 64px;
-	list-style: none;
-	overflow-y: hidden;	
-}
-
-#ticker .tweet_list li {
-	font-size: 18px;
-	height: 64px;
-	line-height: 28px;
-	overflow: hidden;
-}
-
-#ticker .tweet_list .tweet_time a {
-	color: #7f8289;
-	font-size: 14px;
-	font-style: italic;
-	margin-left: 10px;	
-}
-
-#ticker .tweet_list .tweet_time a:hover {
-	color: #FFFFFF;	
-}
-
 
 /* ==================================================
    Social Area
