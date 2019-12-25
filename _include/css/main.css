@@ -204,7 +204,8 @@ h5,
 h6{
 	margin:0 0 20px 0;
 	color:black;
-	font-family: adora;	
+	/*font-family: adora;	*/
+	font-family: blacksword;
 	line-height:2em;
 }
 

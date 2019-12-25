@@ -147,22 +147,16 @@
 <!-- Modernizr -->
 <script src="_include/js/modernizr.js"></script>
 <!-- Analytics -->
-<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push([ '_setAccount', 'Insert Your Code' ]);
-	_gaq.push([ '_trackPageview' ]);
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154991739-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-	(function() {
-		var ga = document.createElement('script');
-		ga.type = 'text/javascript';
-		ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-				: 'http://www')
-				+ '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(ga, s);
-	})();
+  gtag('config', 'UA-154991739-1');
 </script>
+
 <!-- End Analytics -->
 </head>
 <body>
@@ -218,8 +212,7 @@
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#rvsp">RSVP</a></li>          
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
+         </ul>
       </nav>
     </div>
   </header>
@@ -681,7 +674,7 @@
       </div>
     </div>
     </div>
-    <div class="skew-cc"></div>
+
   <!-- End RSVP -->
 
   <!-- Footer -->

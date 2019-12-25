@@ -83,8 +83,10 @@ a.ReadMore:hover{ background-color:#ffae00; color:#fff; }
 
 /* Fonts */
 @font-face {
-  font-family: adora;
-  src: url(fonts/FontsFree-Net-adorabouton.ttf);
+  /*font-family: adora;
+  src: url(fonts/FontsFree-Net-adorabouton.ttf);*/
+  font-family: blacksword;
+  src: url(fonts/Blacksword.otf);
 }
 
 

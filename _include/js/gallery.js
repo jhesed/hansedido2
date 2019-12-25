@@ -78,10 +78,10 @@ BRUSHED.slider = function(){
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
 											// {image : '_include/img/slider-images/image01.jpeg', title : '<div class="slide-content">This</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/1.jpg', title : '<a class="rsvp" href="#rvsp">RSVP</a>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/2.jpg', title : '<a class="rsvp" href="#rvsp">RSVP</a>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/3.jpg', title : '<a class="rsvp" href="#rvsp">RSVP</a>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/4.jpg', title : '<a class="rsvp" href="#rvsp">RSVP</a>', thumb : '', url : ''}
+											{image : '_include/img/slider-images/1.jpg', thumb : '', url : ''},
+											{image : '_include/img/slider-images/2.jpg', thumb : '', url : ''},
+											{image : '_include/img/slider-images/3.jpg', thumb : '', url : ''},
+											{image : '_include/img/slider-images/4.jpg', thumb : '', url : ''}
 									],
 									
 		// Theme Options			   
@@ -184,35 +184,6 @@ BRUSHED.fancyBox = function(){
 }
 
 
-/* ==================================================
-   Contact Form
-================================================== */
-
-BRUSHED.contactForm = function(){
-	$("#contact-submit").on('click',function() {
-		$contact_form = $('#contact-form');
-		
-		var fields = $contact_form.serialize();
-		
-		$.ajax({
-			type: "POST",
-			url: "_include/php/contact.php",
-			data: fields,
-			dataType: 'json',
-			success: function(response) {
-				
-				if(response.status){
-					$('#contact-form input').val('');
-					$('#contact-form textarea').val('');
-				}
-				
-				$('#response').empty().html(response.html);
-			}
-		});
-		return false;
-	});
-}
-
 
 /* ==================================================
    Menu Highlight
@@ -313,28 +284,6 @@ BRUSHED.utils = function(){
 }
 
 /* ==================================================
-   Accordion
-================================================== */
-
-BRUSHED.accordion = function(){
-	var accordion_trigger = $('.accordion-heading.accordionize');
-	
-	accordion_trigger.delegate('.accordion-toggle','click', function(event){
-		if($(this).hasClass('active')){
-			$(this).removeClass('active');
-		   	$(this).addClass('inactive');
-		}
-		else{
-		  	accordion_trigger.find('.active').addClass('inactive');          
-		  	accordion_trigger.find('.active').removeClass('active');   
-		  	$(this).removeClass('inactive');
-		  	$(this).addClass('active');
-	 	}
-		event.preventDefault();
-	});
-}
-
-/* ==================================================
    Toggle
 ================================================== */
 
@@ -363,113 +312,6 @@ BRUSHED.toolTip = function(){
 }
 
 /* ==================================================
-   RSVP
-================================================== */
-BRUSHED.rsvp = function(){ 
-    $('#rvsp-confirm, #rvsp-regret').on('click',function(e) {
-          e.preventDefault(); // stop the normal submit
-          
-          // Validation ------------------------------------------
-
-		 	var input = $('.validate-input .input100');
-	        var check = true;
-
-	        for(var i=0; i<input.length; i++) {
-	            if(validate(input[i]) == false){
-	                showValidate(input[i]);
-	                check=false;
-	            }
-	        }
-
-		    $('.validate-form .input100').each(function(){
-		        $(this).focus(function(){
-		           hideValidate(this);
-		        });
-		    });
-
-		    function validate (input) {
-		        if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
-		            if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
-		                return false;
-		            }
-		        }
-		        else {
-		            if($(input).val().trim() == ''){
-		                return false;
-		            }
-		        }
-		    }
-
-		    function showValidate(input) {
-		        var thisAlert = $(input).parent();
-
-		        $(thisAlert).addClass('alert-validate');
-		    }
-
-		    function hideValidate(input) {
-		        var thisAlert = $(input).parent();
-
-		        $(thisAlert).removeClass('alert-validate');
-		    }
-		    
-          // Form Submisstion ------------------------------------
-
-          if (check == true){
-	          $form = "#hs-rvsp-form"
-	          var _data = $($form).serialize()+'&attendance=' + $(this).attr("value");
-	          console.log(_data)
-
-	          $.ajax({
-	              type: 'POST',
-	              url: "https://hansedido.com/_include/php/rsvp.php",
-	              data: _data, 
-	              success: function(response) {
-	           		var success1 = "Thanks! See you on our wedding!"
-	              	var success2 = "We regret that you won't be able to attend."
-	              	var error = "Please check your spelling or directly contact us."
-	              	var duplicate = "Oops, we already received and will honor your 1st RSVP. If you wish to change your decision, please contact us directly."
-
-	              	console.log("--------")
-					console.log(response)
-					console.log(response.ecode)
-					console.log(response.error)
-					console.log("--------")
-
-	              	if (response.error == false){
-	              																													
-	              		$($form)[0].reset();	         
-
-	              		if (response.attendance == 1){        		
-	              			$("#rvsp-success").html(success1);
-		              		$("#rvsp-msg-error").hide();
-		              		$("#rvsp-msg-success").fadeIn("fast");
-	              		}
-	              		else {	              				              					
-	              			$("#rvsp-error").html(success2);
-	              			$("#rvsp-msg-success").hide();
-		              		$("#rvsp-msg-error").fadeIn("slow");	
-	              		}
-	              	}
-	              	else {		              		
-	              		if (response.ecode == "DUPLICATE"){              		 	              				
-	              			$("#rvsp-error").html(duplicate);
-	              		}
-	              		else {
-	              			$("#rvsp-error").html(error);
-	              		}
-              			$("#rvsp-msg-success").hide();
-	              		$("#rvsp-msg-error").fadeIn("slow");
-	              	}
-	            }
-
-	          });
-	      }
-          return false;
-      });
-}
-
-
-/* ==================================================
 	Init
 ================================================== */
 
@@ -496,7 +338,7 @@ $(document).ready(function(){
 	// Preload the page with jPreLoader
 	$('body').jpreLoader({
 		splashID: "#jSplash",
-		showSplash: true,
+		showSplash: false,
 		showPercentage: true,
 		autoClose: true,
 		onetimeLoad: true,
@@ -513,13 +355,10 @@ $(document).ready(function(){
 	BRUSHED.goUp();
 	BRUSHED.filter();
 	BRUSHED.fancyBox();
-	BRUSHED.contactForm();
 	BRUSHED.scrollToTop();
 	BRUSHED.utils();
-	BRUSHED.accordion();
 	BRUSHED.toggle();
 	BRUSHED.toolTip();
-	BRUSHED.rsvp();
 });
 
 $(window).resize(function(){
