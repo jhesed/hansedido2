@@ -1,2 +1,2 @@
-INSERT INTO jh_guests (id, first_name, last_name, email) VALUES (1, "Jhesed", "Tacadena", "jhesed.tacadena@gmail.com");
-INSERT INTO jh_guests (id, first_name, last_name, email) VALUES (2, "Hannah", "Tanlangco", "tanlangcohannah@gmail.com");
+INSERT INTO jh_guests (id, first_name, last_name, email, mobile) VALUES (1, "Jhesed", "Tacadena", "jhesed.tacadena@gmail.com", "09776364662");
+INSERT INTO jh_guests (id, first_name, last_name, email, mobile) VALUES (2, "Hannah", "Tanlangco", "tanlangcohannah@gmail.com", "09178608036");

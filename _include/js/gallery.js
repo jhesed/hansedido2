@@ -338,7 +338,7 @@ $(document).ready(function(){
 	// Preload the page with jPreLoader
 	$('body').jpreLoader({
 		splashID: "#jSplash",
-		showSplash: false,
+		showSplash: true,
 		showPercentage: true,
 		autoClose: true,
 		onetimeLoad: true,
@@ -350,7 +350,7 @@ $(document).ready(function(){
 	BRUSHED.nav();
 	BRUSHED.mobileNav();
 	BRUSHED.listenerMenu();
-	BRUSHED.menu();
+	// BRUSHED.menu();
 	BRUSHED.goSection();
 	BRUSHED.goUp();
 	BRUSHED.filter();

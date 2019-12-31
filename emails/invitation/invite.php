@@ -149,7 +149,7 @@
 		          </td>
 			      </tr><!-- end tr -->
 						<tr>
-		          <td valign="middle" class="hero" style="position: relative; background-image: url('https://hansedido.com/emails/rsvp/images/monogram.jpg'); background-size: cover; height: 600px;">
+		          <td valign="middle" class="hero" style="position: relative; background-image: url('https://hansedido.com/emails/rsvp/images/monogram.png'); background-size: cover; height: 600px;">
 		 
 		          </td>
 			      </tr><!-- end tr -->

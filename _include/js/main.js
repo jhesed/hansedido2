@@ -422,18 +422,13 @@ BRUSHED.rsvp = function(){
 	          $.ajax({
 	              type: 'POST',
 	              url: "https://hansedido.com/_include/php/rsvp.php",
+	              // "url": "http://localhost/hansedido/_include/php/rsvp.php",
 	              data: _data, 
 	              success: function(response) {
 	           		var success1 = "Thanks! See you on our wedding!"
 	              	var success2 = "We regret that you won't be able to attend."
 	              	var error = "Please check your spelling or directly contact us."
 	              	var duplicate = "Oops, we already received and will honor your 1st RSVP. If you wish to change your decision, please contact us directly."
-
-	              	console.log("--------")
-					console.log(response)
-					console.log(response.ecode)
-					console.log(response.error)
-					console.log("--------")
 
 	              	if (response.error == false){
 	              																													
@@ -504,11 +499,11 @@ $(document).ready(function(){
 			$('#circle').delay(250).animate({'opacity' : 1}, 500, 'linear');
 		}
 	});
-	
+	// 
 	BRUSHED.nav();
 	BRUSHED.mobileNav();
 	BRUSHED.listenerMenu();
-	BRUSHED.menu();
+	// BRUSHED.menu();
 	BRUSHED.goSection();
 	BRUSHED.goUp();
 	BRUSHED.filter();

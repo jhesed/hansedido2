@@ -1,6 +1,7 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 require "db_config.php";
+require "itextmo.php";
 
 /* Handles RSVP reservation logic */
 
@@ -33,7 +34,7 @@ if ($result == null) {
     $response['ecode'] = 'NOT_FOUND';
     exit(json_encode($response));
 }
-if ($result->attendance != null) {
+if ($result->attendance == 1 || $result->attendance == 2) {
     $response['error'] = true;
     $response['ecode'] = 'DUPLICATE';
     exit(json_encode($response));   
@@ -41,9 +42,11 @@ if ($result->attendance != null) {
 
 if ($data["attendance"] == 2) {
     $message = file_get_contents('../../emails/rsvp/rejection.html');
+    $text_message = "We regret that you won't be able to attend our wedding. See you some other time! - hansedido";
 }
 else {
     $message = file_get_contents('../../emails/rsvp/confirmation.html');
+    $text_message = "Thank you for confirming your attendance at our wedding. See you at Feb 25! - hansedido";
 }
 $message = str_replace('{USER}', ucwords($data["first_name"]), $message);
 
@@ -60,7 +63,14 @@ $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 $subject = "[han-sed-i-do] Attendance Confirmation";
 
-mail($result->email, $subject, $message, $headers);
+if ($result->email != null or $result->email != ""){
+    mail($result->email, $subject, $message, $headers);
+}
+
+if ($result->mobile != null or $result->mobile != ""){
+    // itexmo_curless($result->mobile, $text_message);
+    itexmo_curl($result->mobile, $text_message);
+}
 
 exit(json_encode($response));
 
