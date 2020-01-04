@@ -421,35 +421,46 @@ BRUSHED.rsvp = function(){
 
 	          $.ajax({
 	              type: 'POST',
-	              url: "https://hansedido.com/_include/php/rsvp.php",
+	              // url: "https://hansedido.com/_include/php/rsvp.php",
 	              // "url": "http://localhost/hansedido/_include/php/rsvp.php",
+	              url: "http://hansedido.rf.gd/_include/php/rsvp.php",
 	              data: _data, 
 	              success: function(response) {
+	           		response = JSON.parse(response);
 	           		var success1 = "Thanks! See you on our wedding!"
 	              	var success2 = "We regret that you won't be able to attend."
 	              	var error = "Please check your spelling or directly contact us."
 	              	var duplicate = "Oops, we already received and will honor your 1st RSVP. If you wish to change your decision, please contact us directly."
 
+	              	console.log(response)
+	              	console.log(response.ecode)
+	              	console.log(response.attendance)
 	              	if (response.error == false){
+	              		console.log("Im here yo");
 	              																													
 	              		$($form)[0].reset();	         
 
-	              		if (response.attendance == 1){        		
+	              		if (response.attendance == 1){ 
+	              			console.log("thanks")       		
 	              			$("#rvsp-success").html(success1);
 		              		$("#rvsp-msg-error").hide();
 		              		$("#rvsp-msg-success").fadeIn("fast");
 	              		}
-	              		else {	              				              					
+	              		else {	              	
+	              			console.log("regret")			              					
 	              			$("#rvsp-error").html(success2);
 	              			$("#rvsp-msg-success").hide();
 		              		$("#rvsp-msg-error").fadeIn("slow");	
 	              		}
 	              	}
 	              	else {		              		
+	              		console.log("failed")
 	              		if (response.ecode == "DUPLICATE"){              		 	              				
 	              			$("#rvsp-error").html(duplicate);
+	              			console.log("duplicate")
 	              		}
 	              		else {
+	              			console.log("generic error")
 	              			$("#rvsp-error").html(error);
 	              		}
               			$("#rvsp-msg-success").hide();
