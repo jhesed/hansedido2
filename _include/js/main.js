@@ -421,9 +421,9 @@ BRUSHED.rsvp = function(){
 
 	          $.ajax({
 	              type: 'POST',
-	              // url: "https://hansedido.com/_include/php/rsvp.php",
+	              url: "https://hansedido.com/_include/php/rsvp.php",
 	              // "url": "http://localhost/hansedido/_include/php/rsvp.php",
-	              url: "http://hansedido.rf.gd/_include/php/rsvp.php",
+	              // url: "http://hansedido.rf.gd/_include/php/rsvp.php",
 	              data: _data, 
 	              success: function(response) {
 	           		response = JSON.parse(response);
@@ -505,11 +505,13 @@ $(document).ready(function(){
 		showSplash: true,
 		showPercentage: true,
 		autoClose: true,
-		onetimeLoad: true,
+		onetimeLoad: false,
 		splashFunction: function() {
 			$('#circle').delay(250).animate({'opacity' : 1}, 500, 'linear');
 		}
 	});
+
+	console.log("Hi FE developers.  Don't mind my console logs. :D - Jhesed")
 	// 
 	BRUSHED.nav();
 	BRUSHED.mobileNav();

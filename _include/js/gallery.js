@@ -341,7 +341,7 @@ $(document).ready(function(){
 		showSplash: true,
 		showPercentage: true,
 		autoClose: true,
-		onetimeLoad: true,
+		onetimeLoad: false,
 		splashFunction: function() {
 			$('#circle').delay(250).animate({'opacity' : 1}, 500, 'linear');
 		}

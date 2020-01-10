@@ -109,17 +109,12 @@
   href="_include/css/contact-form.css"
   rel="stylesheet"
 >
+
 <!-- Han Sed I Do -->
 <link
   href="_include/css/hansedido.css"
   rel="stylesheet"
 >
-<!-- Google Font -->
-<!-- <link
-  href='http://fonts.googleapis.com/css?family=Cookie:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900'
-  rel='stylesheet'
-  type='text/css'
-> -->
 <!-- Fav Icon -->
 <link
   rel="shortcut icon"
@@ -221,7 +216,7 @@
 
   <div
     id="countdown"
-    class="page"
+    class="page scale-in-center"
   >
     <div class="container">
       <div class="main-area-wrapper">
@@ -504,6 +499,25 @@
                 class="accordion-toggle"
                 data-toggle="collapse"
                 data-parent="#"
+                href="#collapseten"
+              > Will alcoholic drinks be served? <span class="font-icon-plus"></span> <span
+                class="font-icon-minus"
+              ></span>
+              </a>
+            </div>
+            <div
+              id="collapseten"
+              class="accordion-body collapse"
+            >
+              <div class="accordion-inner">To manage your expectations, there will be no alcoholic drinks in the reception.</div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading togglize">
+              <a
+                class="accordion-toggle"
+                data-toggle="collapse"
+                data-parent="#"
                 href="#collapseEight"
               > What time will the reception end? <span class="font-icon-plus"></span> <span
                 class="font-icon-minus"
@@ -549,7 +563,7 @@
   <!-- RVSP -->
   <div
     id="rvsp"
-    class="animsition page-alternate"
+    class="page-alternate"
   >
     <div class="container container-contact100 wow lightSpeedIn">
       <div class="wrap-contact100">
@@ -565,14 +579,14 @@
           </span>
           <div
             id="rvsp-msg-error"
-            class="isa_info"
+            class="isa_info alert alert-error fade in"
             style="display: none"
           >
             <i class="fa fa-info-circle"></i> <span id="rvsp-error"></span>
           </div>
           <div
             id="rvsp-msg-success"
-            class="isa_success"
+            class="isa_success alert alert-success fade in"
             style="display: none"
           >
             <i class="fa fa-check"></i> <span id="rvsp-success"></span>
@@ -692,7 +706,7 @@
   </a>
   <!-- End Back to Top -->
   <!-- Js -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="_include/js/jquery.1.9.1.min.js"></script>
   <!-- jQuery Core -->
   <script src="_include/js/bootstrap.min.js"></script>
   <!-- Bootstrap -->
@@ -712,12 +726,12 @@
   <!-- Tweet -->
   <script src="_include/js/plugins.js"></script>
   <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+
   <script src="_include/js/main.js"></script>
   <!-- Default JS -->
   <!-- Jhesed scripts -->
   <script src="_include/js/jquery.countdown.min.js"></script>
   <script src="_include/js/countdown-timer.js"></script>
-
   <!-- <script src="_include/js/rsvp-form.js"></script> -->
   <!-- End Jhesed scripts -->
   <!-- End Js -->
