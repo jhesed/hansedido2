@@ -150,11 +150,11 @@
 			          	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto !important;">
 			          		<tr>
 			          			<td width="40%" class="logo" style="text-align: left;">
-						            <h1 style="margin: 0; color: #000;	font-size: 20px; font-weight: 700; text-transform: uppercase; font-family: 'Nunito Sans', sans-serif; font-family: 'Nunito Sans', sans-serif; color: #000000;	margin-top: 0;"><a style="text-decoration: none; color: #000; font-size: 20px; font-weight: 700; text-transform: uppercase; font-family: 'Nunito Sans', sans-serif; color: #f5564e;" href="https://hansedido.com">Han Sed I Do</a></h1>
+						            <h1 style="margin: 0; color: #000;	font-size: 20px; font-weight: 700; text-transform: uppercase; font-family: 'Nunito Sans', sans-serif; font-family: 'Nunito Sans', sans-serif; color: #000000;	margin-top: 0;"><a style="text-decoration: none; color: #000; font-size: 20px; font-weight: 700; text-transform: uppercase; font-family: 'Nunito Sans', sans-serif; color: #f5564e;" href="http://hansedido.com">Han Sed I Do</a></h1>
 						          </td>
 						          <td width="60%" class="logo" style="text-align: right;">
 						            <ul style="padding:0">
-						            	<li style="	list-style: none; display: inline-block; margin-left: 5px; font-size: 12px;	font-weight: 700; text-transform: uppercase;"><a href="https://hansedido.com" style="text-decoration: none; color: rgba(0,0,0,.6);">Home</a></li>
+						            	<li style="	list-style: none; display: inline-block; margin-left: 5px; font-size: 12px;	font-weight: 700; text-transform: uppercase;"><a href="http://hansedido.com" style="text-decoration: none; color: rgba(0,0,0,.6);">Home</a></li>
 						            </ul>
 						          </td>
 			          		</tr>
@@ -162,7 +162,7 @@
 			          </td>
 				      </tr><!-- end tr -->
 							<tr>
-     				  <td valign="middle" class="hero" style="position: relative; background-image: url('https://hansedido.com/emails/rsvp/images/monogram.png'); background-size: cover; height: 600px;">
+     				  <td valign="middle" class="hero" style="position: relative; background-image: url('http://hansedido.com/emails/rsvp/images/monogram.png'); background-size: cover; height: 600px;">
 			 
 			          </td>
 				      </tr><!-- end tr -->
@@ -177,7 +177,7 @@
 				          	<p>Dear <b><i>{USER}</i></b>,</p>
 				          	<p>You have a special place in our heart and we humbly invite you to be a part of our wedding.</p>
 				          	<p>Your presence will be a blessing.  </p>
-				          	<p>Please confirm your attendance <u>before</u> <b>January 18, 2020</b> via our website: <a href="https://hansedido.com" style="color: #f5564e">www.hansedido.com</a></p>
+				          	<p>Please confirm your attendance <u>before</u> <b>January 18, 2020</b> via our website: <a href="http://hansedido.com" style="color: #f5564e">www.hansedido.com</a></p>
 				          	<p>See you!</p>
 				          	<p>With love,</p>
 				          	<p><i>Hannah and Jhesed</i></p>

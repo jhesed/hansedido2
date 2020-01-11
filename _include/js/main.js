@@ -422,7 +422,7 @@ BRUSHED.rsvp = function(){
 	          $.ajax({
 	              type: 'POST',
 	              url: "http://hansedido.com/_include/php/rsvp.php",
-	              // url: "https://hansedido.com/_include/php/rsvp.php",
+	              // url: "http://hansedido.com/_include/php/rsvp.php",
 	              // "url": "http://localhost/hansedido/_include/php/rsvp.php",
 	              // url: "http://hansedido.rf.gd/_include/php/rsvp.php",
 	              data: _data, 

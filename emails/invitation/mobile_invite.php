@@ -14,7 +14,7 @@
 			continue;
 		}
 
-		$message = "(hansedido) {USER}, You are invited to our wedding on February 25. Please confirm attendance via our website, https://hansedido.com before January 18. You may also check your email for more details. Thanks! - Jhesed and Hannah";
+		$message = "(hansedido) {USER}, You are invited to our wedding on February 25. Please confirm attendance via our website, http://hansedido.com before January 18. You may also check your email for more details. Thanks! - Jhesed and Hannah";
 		$message = str_replace('{USER}', ucfirst($user), $message);
 		echo("<br/> -");
 		echo($to);
