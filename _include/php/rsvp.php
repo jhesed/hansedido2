@@ -37,10 +37,12 @@ if ($result == null) {
     $response['ecode'] = 'NOT_FOUND';
     exit(json_encode($response));
 }
-if ($result->attendance == 2) {
-    $response['error'] = true;
-    $response['ecode'] = 'DUPLICATE';
-    exit(json_encode($response));   
+if ($result->attendance == 2 || $result->attendance == 1) {
+    if ($data["attendance"] != 2) {
+        $response['error'] = true;
+        $response['ecode'] = 'DUPLICATE';
+        exit(json_encode($response));
+    }
 }
 
 if ($data["attendance"] == 2) {
