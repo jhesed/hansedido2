@@ -177,7 +177,7 @@
 				          	<p>Dear <b><i>{USER}</i></b>,</p>
 				          	<p>You have a special place in our heart and we humbly invite you to be a part of our wedding.</p>
 				          	<p>Your presence will be a blessing.  </p>
-				          	<p>Please confirm your attendance <u>before</u> <b>January 18, 2020</b> via our website: <a href="http://hansedido.com" style="color: #f5564e">www.hansedido.com</a></p>
+				          	<p>Please confirm your attendance <u>before</u> <b>January 18, 2020</b> via our website: <a href="http://hansedido.com" style="color: #f5564e">http://hansedido.com</a></p>
 				          	<p>See you!</p>
 				          	<p>With love,</p>
 				          	<p><i>Hannah and Jhesed</i></p>
