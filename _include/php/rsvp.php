@@ -1,8 +1,10 @@
 <?php
 header("Access-Control-Allow-Origin: *");
+// header("Access-Control-Allow-Headers: x-requested-with"); 
 require "db_config.php";
 // require "itextmo.php";
 require "engagespark.php";
+require './PHPMailer/PHPMailerAutoload.php';
 
 /* Handles RSVP reservation logic */
 
@@ -71,6 +73,15 @@ $subject = "[Han Sed I Do] Attendance Confirmation";
 
 // SMTP Email
 if ($result->email != null or $result->email != ""){
+    date_default_timezone_set('Etc/UTC');
+
+    $mail = new PHPMailer;
+    $mail->isSMTP();
+
+    /*
+     * Server Configuration
+     */
+
     $mail->Host = 'smtp.gmail.com'; // Which SMTP server to use.
     $mail->Port = 587; // Which port to use, 587 is the default port for TLS security.
     $mail->SMTPSecure = 'tls'; // Which security method to use. TLS is most secure.
@@ -78,9 +89,18 @@ if ($result->email != null or $result->email != ""){
     $mail->Username = "hansedido@gmail.com"; // Your Gmail address.
     $mail->Password = "12345hansedido"; // Your Gmail login password or App Specific Password.
 
+    /*
+     * Message Configuration
+     */
+
     $mail->setFrom('rsvp@hansedido.com', 'Han Sed I Do'); // Set the sender of the message.
-    $mail->addAddress($to, $user); // Set the recipient of the message.
+    $mail->addAddress($result->email, $result->first_name); // Set the recipient of the message.
     $mail->Subject = $subject; // The subject of the message.
+
+    /*
+     * Message Content - Choose simple text or HTML email
+     */
+     
     $mail->msgHTML($message);
     $mail->send();
 }
