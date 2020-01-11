@@ -1,5 +1,7 @@
 <?php
 
+	require '../../_include/php/PHPMailer/PHPMailerAutoload.php';
+
 	$file = fopen("../guest_list.csv","r");
 	$subject = "You're invited!";
 
@@ -208,20 +210,59 @@
 			</html>
 EOD;
 
-
 		$message = str_replace('{USER}', ucfirst($user), $message);
 
-		$headers = "From: " . strip_tags("rsvp@hansedido.com") . "\r\n";
-		$headers .= "Reply-To: ". strip_tags("rsvp@hansedido.com") . "\r\n";
-		// $headers .= "CC: jhesed.tacadena@gmail.com\r\n";
-		$headers .= "MIME-Version: 1.0\r\n";
-		$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-		$subject = "[han-sed-i-do] You are Invited";
+		// Non-SMTP
+		// $headers = "From: " . strip_tags("rsvp@hansedido.com") . "\r\n";
+		// $headers .= "Reply-To: ". strip_tags("rsvp@hansedido.com") . "\r\n";
+		// // $headers .= "CC: jhesed.tacadena@gmail.com\r\n";
+		// $headers .= "MIME-Version: 1.0\r\n";
+		// $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+		$subject = "You are Invited at our Wedding";
+		// mail($to, $subject, $message, $headers);
 
+		// SMTP
+		date_default_timezone_set('Etc/UTC');
+
+		$mail = new PHPMailer;
+		$mail->isSMTP();
+
+		/*
+		 * Server Configuration
+		 */
+
+		$mail->Host = 'smtp.gmail.com'; // Which SMTP server to use.
+		$mail->Port = 587; // Which port to use, 587 is the default port for TLS security.
+		$mail->SMTPSecure = 'tls'; // Which security method to use. TLS is most secure.
+		$mail->SMTPAuth = true; // Whether you need to login. This is almost always required.
+		$mail->Username = "hansedido@gmail.com"; // Your Gmail address.
+		$mail->Password = "12345hansedido"; // Your Gmail login password or App Specific Password.
+
+		/*
+		 * Message Configuration
+		 */
+
+		$mail->setFrom('rsvp@hansedido.com', 'Han Sed I Do'); // Set the sender of the message.
+		$mail->addAddress($to, $user); // Set the recipient of the message.
+		$mail->Subject = $subject; // The subject of the message.
+
+		/*
+		 * Message Content - Choose simple text or HTML email
+		 */
+		 
+	    $mail->msgHTML($message);
+	
+		if ($mail->send()) {
+		    echo "Your message was sent successfully!";
+		} else {
+		    echo "Mailer Error: " . $mail->ErrorInfo;
+		    echo $mail;
+		}
+	
 		echo("<br/>- ");
 		echo($to);
 		echo("<br/>");
-		mail($to, $subject, $message, $headers);
+
 	}
 
 fclose($file);

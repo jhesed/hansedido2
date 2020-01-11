@@ -1,5 +1,6 @@
 <?php
-	require "../../_include/php/itextmo.php";
+	// require "../../_include/php/itextmo.php";
+	require "../../_include/php/engagespark.php";
 	
 	$file = fopen("../guest_list.csv","r");
 
@@ -13,12 +14,13 @@
 			continue;
 		}
 
-		$message = "{USER}, You are invited to our wedding on February 25. Please confirm attendance via our website, https://hansedido.com before January 18. Thanks! - Jhesed and Hannah";
+		$message = "(hansedido) {USER}, You are invited to our wedding on February 25. Please confirm attendance via our website, https://hansedido.com before January 18. You may also check your email for more details. Thanks! - Jhesed and Hannah";
 		$message = str_replace('{USER}', ucfirst($user), $message);
 		echo("<br/> -");
 		echo($to);
 		// itexmo_curless($to, $message);
-    	itexmo_curl($to, $message);
+    	// itexmo_curl($to, $message);
+    	engagespark_curl($to, $message);
 	}
 
 fclose($file);
