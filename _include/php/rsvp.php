@@ -47,11 +47,11 @@ if ($result->attendance == 2 || $result->attendance == 1) {
 
 if ($data["attendance"] == 2) {
     $message = file_get_contents('../../emails/rsvp/rejection.html');
-    $text_message = "We regret that you won't be able to attend our wedding. See you some other time! - hansedido";
+    $text_message = "We regret that you won't be able to attend our wedding. See you some other time! - Jhesed and Hannah";
 }
 else {
     $message = file_get_contents('../../emails/rsvp/confirmation.html');
-    $text_message = "Thank you for confirming your attendance at our wedding. See you at Feb 25! - hansedido";
+    $text_message = "Thank you for confirming your attendance at our wedding. See you at Feb 25! - Jhesed and Hannah";
 }
 $message = str_replace('{USER}', ucwords($data["first_name"]), $message);
 
